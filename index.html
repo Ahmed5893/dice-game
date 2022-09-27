@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pick Game</title>
+  </head>
+  <body>
+    <main class="main">
+      <button class="btn btn--rule">📜How to play</button>
+      <div class="rules rules-style">
+        <ol>
+          <li>Click on the Roll dice button to roll the dice</li>
+          <li>
+            Every time you roll the dice,the number picked will add to your
+            current
+          </li>
+          <li>
+            Click the hold button to transfer your current points to your score
+            and end your turn
+          </li>
+          <li>
+            If you get 1 on the dice,you loose all your current points and your
+            turn will end
+          </li>
+          <li>First player who reach 100 points on his score win.</li>
+        </ol>
+        <h5 class="rules-footer">HAVE FUN !</h5>
+      </div>
+      <div class="card" id="player-0">
+        <h2>Player1</h2>
+        <span class="score" id="score-player0">0</span>
+        <div class="current-score">
+          <h4>current</h4>
+          <span id="currentScore-player0">0</span>
+        </div>
+      </div>
+
+      <div class="card player-inactive" id="player-1">
+        <h2>Player2</h2>
+        <span class="score" id="score-player1">0</span>
+        <div class="current-score">
+          <h4>current</h4>
+          <span id="currentScore-player1">0</span>
+        </div>
+      </div>
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+      <section class="container">
+        <div id="cube">
+          <div class="front">
+            <span class="dot dot1"></span>
+          </div>
+          <div class="left">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+            <span class="dot dot4"></span>
+          </div>
+          <div class="right">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+          </div>
+          <div class="back">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+          </div>
+          <div class="top">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+            <span class="dot dot4"></span>
+            <span class="dot dot5"></span>
+          </div>
+          <div class="bottom">
+            <span class="dot dot1"></span>
+            <span class="dot dot2"></span>
+            <span class="dot dot3"></span>
+            <span class="dot dot4"></span>
+            <span class="dot dot5"></span>
+            <span class="dot dot6"></span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
