@@ -69,6 +69,7 @@ function mod(n, m) {
 }
 
 function getResult(xRand, yRand) {
+  
   let countX = mod(xRand / 90, 4);
   if (countX === 1) {
     return 6;
@@ -98,12 +99,11 @@ const hold = function () {
   }
 };
 
-const showRules=function(player) {
-
-rules.classList.toggle("rules");
-}
+const showRules = function (player) {
+  rules.classList.toggle("rules");
+};
 buttonHold.addEventListener("click", hold);
 
 buttonNew.addEventListener("click", newGame);
 
-buttonRules.addEventListener("click",showRules);
+buttonRules.addEventListener("click", showRules);
